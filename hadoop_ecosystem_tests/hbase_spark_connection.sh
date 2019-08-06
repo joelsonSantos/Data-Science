@@ -1,3 +1,5 @@
+create table 'personal', 'personal_data'
+
 put 'personal', '1000', 'personal_data:city', 'John Dole'
 put 'personal', '1000', 'personal_data:name', '1-425-000-0001'
 put 'personal', '1000', 'personal_data:city', '1-425-000-0002'

@@ -1,3 +1,5 @@
+# testar esse código - https://acadgild.com/blog/apache-spark-hbase
+
 create table 'personal', 'personal_data'
 
 put 'personal', '1000', 'personal_data:city', 'John Dole'

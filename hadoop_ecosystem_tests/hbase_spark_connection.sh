@@ -28,9 +28,6 @@ val conf = HBaseConfiguration.create()
 val tablename = "personal"
 
 conf.set(TableInputFormat.INPUT_TABLE,tablename)
-// val admin = new HBaseAdmin(conf)
-
-val sc = new SparkContext(master="local[*]", appName="Spark_Save_Us", new SparkConf)
 
 val HbaseRdd = sc.newAPIHadoopRDD(conf, classOf[TableInputFormat], classOf[org.apache.hadoop.hbase.io.ImmutableBytesWritable], classOf[org.apache.hadoop.hbase.client.Result])
 

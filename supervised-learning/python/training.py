@@ -179,7 +179,7 @@ def model_approach_statistical_methods(train_dataset, y_train, test_dataset, y_t
             steps=[
                 ("onehot", OneHotEncoder(handle_unknown="ignore")),
                 ("high_variance", VarianceThreshold(threshold=0.0)),
-                ("feature_selection", SelectKBest(k=500))
+                ("feature_selection", SelectKBest(k=500, score_func=chi2))
             ]    
         )
         # processing numeric and categorical fields
